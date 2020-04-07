@@ -17,7 +17,7 @@ public void HttpResponseCallback(bool success, const char[] error, System2HTTPRe
 						char sId[64];
 						GetClientAuthId(iPlayer,AuthId_SteamID64,sId,64);
 						if(StrEqual(sId,sBuffers[1])){
-							KickClientEx(iPlayer);
+							KickClient(iPlayer, "You need to finish setting up your steam profile to join this server.");
 						}
 					}
 				}
